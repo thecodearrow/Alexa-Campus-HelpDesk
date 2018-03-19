@@ -1,0 +1,10 @@
+{
+  "name": "Alexa-Slots-Custom",
+  "version": "1.0.0",
+  "description": "Sample app for custom slots in a skill",
+  "main": "index.js",
+  "author": "Sunil Syal",
+  "dependencies": {
+    "alexa-sdk": "^1.0.6"
+  }
+}

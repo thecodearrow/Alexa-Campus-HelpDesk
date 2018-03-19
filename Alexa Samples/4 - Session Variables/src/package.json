@@ -1,0 +1,10 @@
+{
+  "name": "Alexa-Session-Variables",
+  "version": "1.0.0",
+  "description": "Sample app for session variables",
+  "main": "index.js",
+  "author": "Sunil Syal",
+  "dependencies": {
+    "alexa-sdk": "^1.0.6"
+  }
+}
