@@ -1,4 +1,6 @@
-﻿Hi, Welcome to U.B. ... I can help you out with locations. Where would you like to go?
+Hi, Welcome to U.B. ... I can help you out with locations. Where would you like to go?
+
+(Can add "Good Morning" "Good Afternoon") according to current time instead
 
 {
   "library": "ground",
@@ -88,7 +90,7 @@
 "chemical science":"Chemical Science Laboratory",
 "environmental":"Environmental and Science Technology",
 "scanning tunneling spectroscopy":"Scanning Tunneling Spectroscopy Laboratory",
-"green energy":"Green Energy Material",
+"green energy":"Green Energy Material Laboratory",
 "photoluminescence":"Photoluminescence Spectroscopy Laboratory",
 "registrar":"Registrar Office",
 "chancellor":"Chancellor Office",
