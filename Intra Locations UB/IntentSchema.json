@@ -26,6 +26,19 @@
                     }
                 ],
                 "samples": [
+                    "{ub_locations} enquiry",
+                    "{ub_locations} lab",
+                    "{ub_locations} office",
+                    "and where is {ub_locations}",
+                    "yes and where is {ub_locations}",
+                    "also where is {ub_locations}",
+                    "how about {ub_locations}",
+                    "yes {ub_locations}",
+                    "yes what about {ub_locations}",
+                    "help me find {ub_locations}",
+                    "I am looking for {ub_locations}",
+                    "I was having trouble finding {ub_locations}",
+                    "I was having trouble locating {ub_locations}",
                     "go to {ub_locations}",
                     "how do i go to {ub_locations}",
                     "how to go to {ub_locations}",
@@ -53,6 +66,20 @@
                     "where can I find {ub_locations}",
                     "I would like to go to {ub_locations}",
                     "{ub_locations}"
+                ]
+            },
+            {
+                "name": "AMAZON.NoIntent",
+                "slots": [],
+                "samples": [
+                    "that's it thankyou",
+                    "that's it",
+                    "no thanks",
+                    "no thanyou",
+                    "nothing else thanks",
+                    "nothing else thankyou",
+                    "nothing else",
+                    "No"
                 ]
             }
         ],
