@@ -20,10 +20,9 @@ const Alexa = require('alexa-sdk');
 const APP_ID = undefined;
 
 const SKILL_NAME = 'SRMCampusHelpDesk';
-const GET_FACT_MESSAGE = "Hi! Welcome to UB";
 const HELP_MESSAGE = 'You can ask me for locations... What can I help you with?';
-const HELP_REPROMPT = 'What can I help you with?';
-const STOP_MESSAGE = 'Have a great day!';
+const HELP_REPROMPT = 'Where do you want to go?';
+const STOP_MESSAGE = 'Goodbye!';
 
 
 var ub_locations = {"library":"ground","own book reading":"first","digital library":"first","international relations":"second","admission":"second","research":"fourth","ITKM":"fourth","student affairs":"fourth","Tamil":"fourth","incubation center":"fourth","physics":"sixth","physics lab":"sixth","nanotechnology":"sixth","software development lab":"seventh","software quality lab":"seventh","information technology":"eighth","career development center":"ninth","CDC":"ninth","director office":"ninth","administration":"ninth","academia":"ninth","account section":"ninth","maths":"tenth","mathematics":"tenth","math":"tenth","English and foreign":"eleventh","software engineering":"eleventh","university learning center":"eleventh","dual degree":"twelfth","Taiwan":"twelfth","research scholar":"twelfth","chemistry":"twelfth","chem":"twelfth","material science":"thirteenth","microbiology":"thirteenth","biochemistry":"thirteenth","high performance computing":"thirteenth","chemical science":"thirteenth","environmental":"thirteenth","scanning tunneling spectroscopy":"thirteenth","green energy":"thirteenth","photoluminescence":"thirteenth","research institute":"thirteenth","COE":"fourteenth","controller of examination":"fourteenth","registrar":"fifteenth","chancellor":"fifteenth","vice chancellor":"fifteenth","washroom":"every single floor","restroom":"every single floor","toilet":"every single floor","canteen":"fith floor","English":"eleventh"};
@@ -75,5 +74,20 @@ var handlers = {
         }
        
        
+    },
+    'AMAZON.HelpIntent': function () {
+        const speechOutput = HELP_MESSAGE;
+        const reprompt = HELP_REPROMPT;
+
+        this.response.speak(speechOutput).listen(reprompt);
+        this.emit(':responseReady');
+    },
+    'AMAZON.CancelIntent': function () {
+        this.response.speak(STOP_MESSAGE);
+        this.emit(':responseReady');
+    },
+    'AMAZON.StopIntent': function () {
+        this.response.speak(STOP_MESSAGE);
+        this.emit(':responseReady');
     }
 };
